@@ -1,6 +1,9 @@
+#client creation with python
+
 from kinto_http import Client
 
-client = Client(server_url="http://localhost:8888/v1",
+#TODO Use env. variables for auth
+client = Client(server_url="https://kinto.dev.mozaws.net/v1",
                 auth=('arpit', 'p4ssw0rd'))
 
 records = client.get_records(bucket='default', collection='todos')
