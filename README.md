@@ -30,3 +30,15 @@ Decoding the object back to the utf-8 format makes it work.
 
 
 Other changes are just there write the dafsa to a file.
+
+
+### Setup
+
+```bash
+$ pip install -r requirements.txt
+```
+
+For Development setup the secrets.py file.
+```bash
+$ echo 'SERVER = "http://3.14.70.33:8888/v1" \nUSERNAME = "arpit73" \nPASSWORD = "s3cr3t"' > uploader/secrets.py
+```
