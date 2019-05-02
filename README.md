@@ -1,6 +1,10 @@
 # dafsa_server
 
 A naive implementation of the server part of the psl-update project.
+The dafsa generation code from firefox has been successfully ported to run on the server. 
+The required C++ array is created and written to the file [etld_data.inc](attachments/etld_data.inc) (name is kept the same as used in firefox currently).
+
+I have setup a kinto remote-server on an AWS EC2 instance at http://3.14.70.33:8888/v1 for testing, there is no useful code written to interact with kinto so far, I have only been looking at the API and different platforms to use. I have tested mostly with Python and Bash with a little NodeJs as well. The final code may be written in Python with the kinto-http.py module.
 
 Run this with
 ```
